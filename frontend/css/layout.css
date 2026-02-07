@@ -1,0 +1,66 @@
+/* Estructura de ambos navs */
+#mainNav ul , #categoriesNav ul {
+    
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    /* Decoraciones de texto */
+    text-decoration: none;
+    list-style: none;
+    
+    /* Ajuste de ¿tamaño? */
+    padding: 0;
+    margin: 0;
+    gap: 1.9rem; /* Tamaño entre elementos*/
+}
+
+/* Nav principal */
+#mainNav {
+    padding: 0.5rem 0.8rem;
+}
+
+/* Nav de categorías */
+/* #categoriesNav {
+    padding: 0.5rem;
+} */
+
+/* Cada elemento de la lista  */
+#categoriesNav li {
+    padding: 0.3rem;
+    margin: 0;
+}
+
+/* Nav principal, izquierda */
+#mainNav .left {
+    margin-right: auto;
+}
+
+/* Nav principal, derecha */
+/* #mainNav .right {
+    display: flex;
+    gap: 10rem;
+}
+*/
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    #mainNav {
+    padding: 0.6rem;
+    }
+
+    #categoriesNav {
+    padding: 0rem .5rem;
+  }
+  
+    #categoriesNav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 0.9rem 0rem;
+    gap: 1rem;
+    text-align: center;
+  }
+}
